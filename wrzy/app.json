@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wrzyindex/index",
+    "pages/erfpages/erf_index",
+    "pages/lxwm/lxwm"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#26be18",
+    "navigationBarTitleText": "万瑞置业",
+    "navigationBarTextStyle": "black"
+  }
+}

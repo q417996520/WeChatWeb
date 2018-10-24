@@ -1,0 +1,162 @@
+<zan-search placeholder="搜索..." searchStyle="height: 88rpx; padding: 0 30rpx; background: {{ searchbg || '#26be18' }};" inputStyle="height: 56rpx; border-radius: 8rpx;" keyword="{{ inputValue }}" focus="{{ focus }}" bindchange="searchChange" bindsearch="searchDone"
+/>
+
+<view id="swiper-tab">
+    <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="tabNav">{{first}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="tabNav">{{second}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="tabNav">{{thirds}}
+        <i></i>
+      </view>
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="tabNav">{{fours}}
+        <i></i>
+      </view>
+    </view>
+    <swiper current="{{currentTab}}" duration="1000" class="swiper-item" style='display:{{displays}}'>
+      <swiper-item>
+        <view>
+          <view class='qiehuannier'>
+           
+            <view id="rights">
+              <view class="{{selected?'show':'hidden'}}">
+                <view class="{{_sum == 1?'add_adress':'add_city'}}" data-num="1" bindtap="clickSum" data-name="南关区">南关区</view>
+                <view class="{{_sum == 2?'add_adress':'add_city'}}" data-num="2" bindtap="clickSum" data-name="绿城区">绿城区</view>
+                <view class="{{_sum == 3?'add_adress':'add_city'}}" data-num="3" bindtap="clickSum" data-name="朝阳区">朝阳区</view>
+                <view class="{{_sum == 4?'add_adress':'add_city'}}" data-num="4" bindtap="clickSum" data-name="二道区">二道区</view>
+                <view class="{{_sum == 5?'add_adress':'add_city'}}" data-num="5" bindtap="clickSum" data-name="双阳区">双阳区</view>
+                <view class="{{_sum == 6?'add_adress':'add_city'}}" data-num="6" bindtap="clickSum" data-name="九台区">九台区</view>
+                 <view class="{{_sum == 7?'add_adress':'add_city'}}" data-num="6" bindtap="clickSum" data-name="朝阳区">朝阳区</view>
+              </view>
+             
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="location_bottom" hidden="">
+          <view class="{{_num == 1?'add_citying':'add_city'}}" data-num="1" bindtap="clickNum" data-name="50万以下">30万-40万</view>
+          <view class="{{_num == 2?'add_citying':'add_city'}}" data-num="2" bindtap="clickNum" data-name="50万-70万">50万-70万</view>
+          <view class="{{_num == 3?'add_citying':'add_city'}}" data-num="3" bindtap="clickNum" data-name="70万-90万">70万-90万</view>
+          <view class="{{_num == 4?'add_citying':'add_city'}}" data-num="4" bindtap="clickNum" data-name="90万-110万">90万-110万</view>
+          <view class="{{_num == 5?'add_citying':'add_city'}}" data-num="5" bindtap="clickNum" data-name="110万-130万">110万-130万</view>
+          <view class="{{_num == 6?'add_citying':'add_city'}}" data-num="6" bindtap="clickNum" data-name="130万-150万">130万-150万</view>
+          <view class="{{_num == 7?'add_citying':'add_city'}}" data-num="7" bindtap="clickNum" data-name="150万以上">150万以上</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="location_bottom" hidden="">
+          <view class="{{_res == 1?'add_House':'add_city'}}" data-num="1" bindtap="clickHouse" data-name="一室">一室</view>
+          <view class="{{_res == 2?'add_House':'add_city'}}" data-num="2" bindtap="clickHouse" data-name="二室">二室</view>
+          <view class="{{_res == 3?'add_House':'add_city'}}" data-num="3" bindtap="clickHouse" data-name="三室">三室</view>
+          <view class="{{_res == 4?'add_House':'add_city'}}" data-num="4" bindtap="clickHouse" data-name="四室">四室</view>
+          <view class="{{_res == 5?'add_House':'add_city'}}" data-num="5" bindtap="clickHouse" data-name="五室">五室</view>
+          <view class="{{_res == 6?'add_House':'add_city'}}" data-num="6" bindtap="clickHouse" data-name="不限">不限</view>
+     
+        </view>
+      </swiper-item>
+      <swiper-item class="shaixuankuang">
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">面积</span>
+          <block wx:for="{{array}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="choseTxtColor" style="{{index == one?' border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+          <view class="zidingyi">
+            <span>自定义面积:</span>
+            <input class="front" type='text'></input>
+            <p>-</p>
+            <input class="back" type='text'></input>
+            <button>设置</button>
+          </view>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">朝向</span>
+          <block wx:for="{{chaoxiang}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="chaoxiang" style="{{index == two?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+ 
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">楼层</span>
+          <block wx:for="{{louceng}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="louceng" style="{{index == third?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">装修</span>
+          <block wx:for="{{zhuangxiu}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="zhuangxiu" style="{{index == four?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">建筑类别</span>
+          <block wx:for="{{leibei}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="leibei" style="{{index == five?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+<!--       <view class="shaixuan">
+          <span class="shuaixuantiaojian">特色</span>
+          <block wx:for="{{tese}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="tese" style="{{index == six?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">排序</span>
+          <block wx:for="{{paixu}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="paixu" style="{{index == seven?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>--> 
+        <view class="qingkong">
+          <span class="tianjian" bindtap="qingchu">清除条件</span>
+          <p class="queren" bindtap="queren">确认</p>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>
+
+
+
+ <zan-panel without-border>
+    <zan-card
+      card-class="test-card"
+      thumb="../../pages/images/zxxgt.jpg"
+      price="35000"
+      num="南关区 超凡大街"
+      title="长春万隆丽水湾"
+      desc="5室一厅|220㎡ "
+      status="精装修"
+    >
+    </zan-card>
+
+  </zan-panel>
+   <zan-panel without-border>
+    <zan-card
+      card-class="test-card"
+      thumb="../../pages/images/zxxgt.jpg"
+      price="35000"
+      num="南关区 超凡大街"
+      title="长春万隆丽水湾"
+      desc="5室一厅|220㎡ "
+      status="精装修"
+    >
+    </zan-card>
+
+  </zan-panel>

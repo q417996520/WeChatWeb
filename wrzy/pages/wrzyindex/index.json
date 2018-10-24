@@ -1,0 +1,10 @@
+{
+  
+  "usingComponents": {
+     "zan-search": "../../dist/search/index",
+    "zan-card": "../../dist/card/index",
+    "zan-panel": "../../dist/panel/index",
+    "doc-page": "../../components/doc-page/index",
+    "zan-noticebar": "../../dist/noticebar/index"
+  }
+}

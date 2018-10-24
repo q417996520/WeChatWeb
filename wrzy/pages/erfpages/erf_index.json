@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "二手房",
+  "usingComponents": {
+    "zan-search": "../../dist/search/index",
+    "zan-panel": "../../dist/panel/index",
+    "doc-page": "../../components/doc-page/index",
+    "zan-card": "../../dist/card/index"
+  }
+}
