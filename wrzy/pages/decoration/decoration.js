@@ -5,9 +5,9 @@ Page({
     focus: true,
     rangeIndex: 0,
     imgUrls: [
-      '../images/sybxtj.jpg',
-      '../images/wkc.jpg',
-      '../images/zxxgt.jpg'
+      '../images/zx1.jpg',
+      '../images/zx2.jpg',
+      '../images/zx3.jpg'
     ],
     indicatorDots: true,
     autoplay: true,

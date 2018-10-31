@@ -30,7 +30,7 @@ picker {
 .table-icon{
   width: 90%;
   padding: 15rpx;
-  padding-left:30rpx; 
+
   display: flex;
 
 }
