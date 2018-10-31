@@ -12,8 +12,9 @@
         latitude="{{latitude}}"
         longitude="{{longitude}}"
         markers="{{markers}}"
-    
+     bindtap="click"
         >
       </map>
+     
     </view>
   </view>

@@ -1,0 +1,9 @@
+<image src="../images/sjs1.jpeg" style="margin-left:30rpx;" mode='aspectFit'> </image>
+<view class='total'>
+  <view class='E-name'>WU XIN</view>
+  <view class='C-name'> 吴昕  <view style='margin-left:70rpx;color:#80c7f4;font-size:15px;'>设计总监   </view></view>
+  <view class='inner-text'>设计理念：深入客户需求，专注设计元素，打造舒适品质。家，是我们人生的真实写照。</view>
+  <view  class='inner-text'>擅长风格：中式、现代简约、欧式、美式、工业风格等等</view>
+
+
+</view>

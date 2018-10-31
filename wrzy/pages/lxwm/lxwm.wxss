@@ -29,11 +29,17 @@
   padding-left: 0;
   padding-right: 0;
 }
-lxwmContent{
-
-  font-style: normal;
+.lxwmContent{
+  margin-top:30rpx;
+  margin-bottom: 50rpx;
+  text-indent:15rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
-  font-size:20rpx; 
+  font-size:30rpx; 
   display: block;
   text-align: left;
+}
+.lxwmContent view{
+
+  border-bottom:1px darkorange dashed;
 }

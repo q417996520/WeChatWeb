@@ -1,0 +1,135 @@
+page{
+  background-color: #000;
+}
+
+.title-view{
+  background-color: #fff;
+}
+
+.picker {
+  position: relative;
+  width: 110rpx;
+  height: 100%;
+  color: #666;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.picker::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -6rpx;
+  border-top: 12rpx solid #333;
+  border-right: 8rpx solid transparent;
+  border-left: 8rpx solid transparent;
+}
+.table-icon{
+  width: 90%;
+  padding: 25rpx;
+  display: flex;
+
+}
+.index-icon{
+  background-color: #fff;
+  width: 145rpx;
+  display: flex;
+  position: relative;
+  padding: 0px;
+  height: 55px;
+}
+.icon-text{
+  padding: 10rpx;
+  text-align: center;
+  font-size: 28rpx;
+  width:155rpx;
+}
+.slide-image{
+   width:785rpx;
+   height:180;
+}
+
+
+.page-section-spacing{
+  margin-top: 20rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 500rpx;
+}
+
+.demo-text-1{
+  height: 50rpx;
+  display: flex;
+  position: relative;
+  background-color: #FFFFFF;
+  color: #000;
+  font-size: 36rpx;
+  box-shadow:0px 2px 2px 2px #666;
+  z-index: 999;
+
+}
+
+.demo-text-2{
+  height: 900rpx;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: #000;
+  font-size: 36rpx;
+}
+
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: #000;
+  font-size: 36rpx;
+}
+
+.text-line{
+width:7rpx;
+height:50rpx;
+background-color:#000;
+margin-left:7rpx;
+box-shadow:2px 0px 2px 0px #666;
+}
+.introduce-font{
+  padding-top: 15rpx;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.designer-out{
+  display: flex;
+  background-color: #fff;
+  margin-top:30rpx;
+}
+.designer-imgs{
+  display: flex;
+   white-space: nowrap;
+  height: 500rpx;
+  margin-bottom: 50rpx;
+  padding-top: 10rpx;
+}
+.designer-img{
+ /* margin-left: 15rpx;*/
+  width: 320rpx;
+  height: 310rpx;
+  
+}
+.designer-text{
+  color: #fff;
+  font-size: 12px;
+  z-index: 99999;
+  text-align: center;
+}
+.designer-view{
+ 
+  width: 50%;
+}

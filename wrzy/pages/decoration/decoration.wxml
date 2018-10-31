@@ -1,0 +1,59 @@
+<view class='title-view'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" style='padding:0rpx;'>
+    <block wx:for="{{imgUrls}}" wx:key="imaUrl">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='table-icon'>
+    <view class='icon-text'>
+      <navigator url="../designer/designer">
+        <image src="../images/icon/renwu.png" mode='aspectFit' class='index-icon'></image>
+        设计团队
+      </navigator>
+    </view>
+    <view class='icon-text'>
+      <image src="../images/icon/bj.png" mode='aspectFit' class='index-icon'></image>
+      报价
+    </view>
+    <navigator url="../404/404">
+      <view class='icon-text'>
+        <image src="../images/icon/sjs.png" mode='aspectFit' class='index-icon'></image>
+        案例展示
+      </view>
+    </navigator>
+    <navigator url="../decoration/decoration">
+      <view class='icon-text'>
+        <image src="../images/icon/jj.png" mode='aspectFit' class='index-icon'></image>
+        团队简介
+      </view>
+    </navigator>
+
+  </view>
+</view>
+
+
+<view class="page-section-spacing">
+  <scroll-view scroll-y="true" style="height: 400rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="demo1" class="scroll-view-item demo-text-1">
+      <view class="text-line"></view>
+      <view style='margin-left:12px'>公司简介</view>
+    </view>
+    <view id="demo2" class="scroll-view-item demo-text-2">
+      <view class="introduce-font">
+        <text decode='{{true}}'>&nbsp;&nbsp;&nbsp;</text>万瑞置业中国定制家居的先进品牌，致力于专业打造精致家居，引入柔性生产线，开启了室内装修行业创新生产模式新时代，以“客户体验”为核心出发点，致力于为客户提供诚心、专心、敬心、尽心、细心、真心的人性化服务体验。</view>
+      <view class='introduce-font'>2018年万瑞置业诞生，经过9年风雨历程，2018年正式在黄金岛落成“中国万瑞家居总部”。万瑞致力于为客户提供一站式装修、设计、家具、软装搭配服务，在整体装修方面现已形成了 一个完善的家居产业链配套体系。 2018年万瑞开始向全国连锁性企业迈进， 武汉万瑞家居落地江城，2018年四川省内分公司落地西昌市，备受行业瞩目。随着时间的沉淀，万瑞得到同行业更多人的认可，全国各地的家居装饰企业不断的到万瑞参观交流。2018年3月，万瑞党委正式成立，并同时设立由“社区治理基金”、“扶贫帮困基金”、“员工关爱基金”三个项目基金组成的万瑞幸福家基金。万瑞党委将按照“党建引领、同心聚力、服务致力、公益助力”作为工作思路，提出“万瑞筑梦，扬帆远航”，以建设幸福家庭为抓手，围绕企业发展梦、个人奋斗梦、幸福家居梦、社会公益梦，延伸服务环节，走进社区、院落拓宽服务对象，协同公益力量让服务对象参与到社区公益活动中。</view>
+    </view>
+    <!--<view id="demo3" class="scroll-view-item demo-text-3"></view>-->
+  </scroll-view>
+  <view class='designer-out'>
+    <view class="text-line"></view>
+    <view style='margin-left:12px'>设计总监</view>
+  </view>
+</view>
+<view class='designer-imgs'>
+<view class="designer-view"><navigator url='../designer_detail/designer_detail'><image src="../images/sjs1.jpeg" class='designer-img'></image></navigator><view class='designer-text'>设计总监：吴昕</view></view>
+<view class="designer-view"><image src="../images/sjs3.jpg" class='designer-img'></image>
+<view class='designer-text'>设计总监：谢娜</view></view>
+</view>

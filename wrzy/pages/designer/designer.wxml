@@ -1,0 +1,55 @@
+<view class='designer-out'>
+  <view class="text-line"></view>
+  <view style='margin-left:12px'>设计总监</view>
+</view>
+
+<view class='designer-imgs'>
+  <view class="designer-view">
+    <navigator url='../designer_detail/designer_detail'>
+      <image src="../images/sjs1.jpeg" class='designer-img'></image>
+    </navigator>
+    <view class='designer-text'>设计总监：吴昕</view>
+  </view>
+
+  <view class="designer-view">
+    <image src="../images/sjs3.jpg" class='designer-img'></image>
+    <view class='designer-text'>设计总监：谢娜</view>
+  </view>
+</view>
+<view class='designer-out'>
+  <view class="text-line"></view>
+  <view style='margin-left:12px'>设计师</view>
+</view>
+
+<view class='designer-imgs'>
+  <view class="designer-view">
+    <navigator url='../designer_detail/designer_detail'>
+      <image src="../images/sjs1.jpeg" class='designer-img'></image>
+    </navigator>
+    <view class='designer-text'>设计总监：吴昕</view>
+  </view>
+
+  <view class="designer-view">
+    <image src="../images/sjs3.jpg" class='designer-img'></image>
+    <view class='designer-text'>设计总监：谢娜</view>
+  </view>
+</view>
+
+<view class='designer-out'>
+  <view class="text-line"></view>
+  <view style='margin-left:12px'>设计助理</view>
+</view>
+
+<view class='designer-imgs'>
+  <view class="designer-view">
+    <navigator url='../designer_detail/designer_detail'>
+      <image src="../images/sjs1.jpeg" class='designer-img'></image>
+    </navigator>
+    <view class='designer-text'>设计总监：吴昕</view>
+  </view>
+
+  <view class="designer-view">
+    <image src="../images/sjs3.jpg" class='designer-img'></image>
+    <view class='designer-text'>设计总监：谢娜</view>
+  </view>
+</view>

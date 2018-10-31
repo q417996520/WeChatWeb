@@ -3,7 +3,7 @@
     <zan-search
       placeholder="搜索..."
       keyword="{{ inputValue }}"
-      focus="{{ focus }}"
+     
       bindchange="searchChange"
       bindsearch="searchDone"
     />
@@ -24,10 +24,12 @@
     <image src="../images/icon/hz.png" mode='aspectFit' class='index-icon'></image>
     合租
     </view>
+    <navigator url="../decoration/decoration">
      <view class='icon-text'>
     <image src="../images/icon/zx.png" mode='aspectFit' class='index-icon'></image>
     装修
     </view>
+    </navigator>
     <view class='icon-text'>
     <navigator url="../lxwm/lxwm">
     <image src="../images/icon/lx.png" mode='aspectFit' class='index-icon'></image>

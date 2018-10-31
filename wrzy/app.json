@@ -1,10 +1,16 @@
 {
   "pages": [
+    "pages/wrzyindex/index",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/wrzyindex/index",
     "pages/erfpages/erf_index",
-    "pages/lxwm/lxwm"
+    "pages/lxwm/lxwm",
+    "pages/decoration/decoration",
+    "pages/anli/anli",
+    "pages/designer/designer",
+    "pages/designer_detail/designer_detail",
+    "pages/404/404",
+    "pages/company/company"
   ],
   "window": {
     "backgroundTextStyle": "light",

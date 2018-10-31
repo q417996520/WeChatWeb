@@ -1,0 +1,21 @@
+/* pages/designer_detail/designer_detail.wxss */
+page{
+  background-color: #000;
+}
+.total{
+  margin-top:50rpx; 
+  margin-left: 30rpx;
+  color:#fff;
+}
+.E-name{
+  font-size: 25px;
+}
+.C-name{
+  font-size: 20px;
+  display: flex;
+   
+}
+.inner-text{
+  margin-top: 30rpx;
+  font-size: 13px；
+}

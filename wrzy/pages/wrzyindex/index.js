@@ -37,7 +37,7 @@ Page({
 
   pickerChange(e) {
     this.setData({
-      rangeIndex: e.detail.value
+      //rangeIndex: e.detail.value
     })
   }
 
