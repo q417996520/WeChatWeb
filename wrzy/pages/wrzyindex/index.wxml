@@ -1,107 +1,74 @@
 <view class='wr-title'>
-<zan-panel >
-    <zan-search
-      placeholder="搜索..."
-      keyword="{{ inputValue }}"
-     
-      bindchange="searchChange"
-      bindsearch="searchDone"
-    />
+  <zan-panel>
+    <zan-search placeholder="搜索..." keyword="{{ inputValue }}" bindchange="searchChange" bindsearch="searchDone" />
   </zan-panel>
- </view>
- <view class='table-icon'>
+</view>
+<view class='table-icon'>
   <view class='icon-text'>
     <navigator url="../erfpages/erf_index">
-    <image src="../images/icon/esf.png" mode='aspectFit' class='index-icon'></image>
-    二手房
+      <image src="../images/icon/esf.png" mode='aspectFit' class='index-icon'></image>
+      二手房
     </navigator>
-    </view>
-      <view class='icon-text'>
+  </view>
+  <view class='icon-text'>
     <image src="../images/icon/zz.png" mode='aspectFit' class='index-icon'></image>
     整租
-    </view>
-      <view class='icon-text'>
+  </view>
+  <view class='icon-text'>
     <image src="../images/icon/hz.png" mode='aspectFit' class='index-icon'></image>
     合租
-    </view>
-    <navigator url="../decoration/decoration">
-     <view class='icon-text'>
-    <image src="../images/icon/zx.png" mode='aspectFit' class='index-icon'></image>
-    装修
-    </view>
-    </navigator>
+  </view>
+  <navigator url="../decoration/decoration">
     <view class='icon-text'>
+      <image src="../images/icon/zx.png" mode='aspectFit' class='index-icon'></image>
+      装修
+    </view>
+  </navigator>
+  <view class='icon-text'>
     <navigator url="../lxwm/lxwm">
-    <image src="../images/icon/lx.png" mode='aspectFit' class='index-icon'></image>
-    联系我们
+      <image src="../images/icon/lx.png" mode='aspectFit' class='index-icon'></image>
+      联系我们
     </navigator>
-    </view> 
- </view>
- <swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"
-  style='padding:12rpx;'>
-  <block wx:for="{{imgUrls}}" wx:key="imaUrl"> 
+  </view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" style='padding:12rpx;'>
+  <block wx:for="{{imgUrls}}" wx:key="imaUrl">
     <swiper-item>
-      <image src="{{item}}" class="slide-image"/>
+      <image src="{{item}}" class="slide-image" />
     </swiper-item>
   </block>
 </swiper>
 <view class="index-fcxx">
-    <text style="margin:25rpx;" >长春房价</text>
-    <view  class="index-zxfj" >
-      <text >最新均价/n</text>
-      <view><text class='redfont'>19234元/m2</text></view>
+  <text style="margin:25rpx;">长春房价</text>
+  <view class="index-zxfj">
+    <text>最新均价/n</text>
+    <view>
+      <text class='redfont'>19234元/m2</text>
     </view>
-    <view  class="index-zxfj" >
-      <text >比上月</text>
-      <view><text class='redfont'>↑1.6%</text></view>
+  </view>
+  <view class="index-zxfj">
+    <text>比上月</text>
+    <view>
+      <text class='redfont'>↑1.6%</text>
     </view>
-     <view  class="index-zxfj" >
-      <text >比去年</text>
-      <view><text class='redfont'>↑3.6%</text></view>
+  </view>
+  <view class="index-zxfj">
+    <text>比去年</text>
+    <view>
+      <text class='redfont'>↑3.6%</text>
     </view>
+  </view>
 </view>
 <view style='width:100%;height:5rpx;background-color:#333;'></view>
-    <zan-noticebar
-      text="{{ bar1.text }}"
-      scrollable="{{ bar1.scrollable }}"
-    />
+<zan-noticebar text="{{ bar1.text }}" scrollable="{{ bar1.scrollable }}" />
 <zan-panel without-border>
-    <zan-card
-      card-class="test-card"
-      thumb="../../pages/images/zxxgt.jpg"
-      price="35000"
-      num="南关区 超凡大街"
-      title="长春万隆丽水湾"
-      desc="5室一厅|220㎡ 50%"
-      status="精装修"
-    >
-    </zan-card>
+  <zan-card card-class="test-card" thumb="../../pages/images/zxxgt.jpg" price="35000" num="南关区 超凡大街" title="长春万隆丽水湾" desc="5室一厅|220㎡ 50%" status="精装修">
+  </zan-card>
+</zan-panel>
 
-  </zan-panel>
+  <view wx:for="{{alldate}}" wx:key="{{index}}">
   <zan-panel without-border>
-    <zan-card
-      card-class="test-card"
-      thumb="../../pages/images/zxxgt.jpg"
-      price="35000"
-      num="南关区 超凡大街"
-      title="长春万隆丽水湾"
-      desc="5室一厅|220㎡ 50%"
-      status="精装修"
-    >
+    <zan-card card-class="test-card" thumb="../../pages/images/zxxgt.jpg" price="{{item.housePrice}}" num="{{item.houseArea}}  {{item.houseStreet}}" title="长春万隆丽水湾" desc="5室一厅|220㎡ 50%" status="精装修">
     </zan-card>
-
-  </zan-panel>
-    <zan-panel without-border>
-    <zan-card
-      card-class="test-card"
-      thumb="../../pages/images/zxxgt.jpg"
-      price="35000"
-      num="南关区 超凡大街"
-      title="长春万隆丽水湾"
-      desc="5室一厅|220㎡ 50%"
-      status="精装修"
-    >
-    </zan-card>
-
-  </zan-panel>
+    </zan-panel>
+  </view>

@@ -3,6 +3,7 @@ Page({
     inputValue: '',
     focus: true,
     rangeIndex: 0,
+    alldate:["1","2"],
     imgUrls: [
       '../images/sybxtj.jpg',
       '../images/wkc.jpg',
@@ -19,6 +20,19 @@ Page({
       scrollable: true,
       delay: 1000
     }  
+  },
+ 
+  onReady(){
+    var self = this;
+    wx.request({
+      url: 'http://myserver:7023/yMybatis/good/get_all_odd',
+      success(res) {
+        console.log(res);
+        self.setData({
+          alldate:res.data,
+        });
+      }
+    });
   },
 
   searchChange(e) {
